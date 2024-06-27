@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="task-form">
+            <input type="text" id="task-name" placeholder="Task Name" required>
+            <input type="text" id="task-description" placeholder="Task Description" required min="2023-11-08" required>
+            <input type="text" id="assigned-to" placeholder="Assigned to" required>
+            <div class="deadline-field">
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" required>
+            </div>
+            <select id="priority" required>
+                <option value="" disabled selected>Select Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button id="add-task">Add Task</button>
+            <input type="text" id="search" placeholder="Search tasks">
+        </div>
+        <div class="task-list">
+            <ul id="task-list-items"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

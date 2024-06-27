@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    text-align: center;
+    background: linear-gradient(-45deg, #46bae0, #163c68, #09759c, #039170);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-form input {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.deadline-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.deadline-field label {
+    flex: 1;
+    text-align: left;
+}
+
+.deadline-field input {
+    margin: 5%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-form select {
+
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-task {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background-color: #45a049;
+}
+
+#search {
+    margin-top: 10px;
+}
+
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.task-item:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+@keyframes gradient {
+    0% {
+        /*this means 0% horizontal position and 50% vertical position of the backgroud colors*/
+        background-position: 0% 50%;
+    }
+
+    50% {
+        /*this means 100% horizontal position and 50% vertical position of the backgroud colors*/
+        background-position: 100% 50%;
+    }
+
+    100% {
+        /*this means 0% horizontal position and 50% vertical position of the backgroud colors*/
+        background-position: 0% 50%;
+    }
+}
